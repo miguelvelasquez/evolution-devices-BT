@@ -1,0 +1,6 @@
+framework module Pods_Evolution_Devices_BT {
+  umbrella header "Pods-Evolution Devices BT-umbrella.h"
+
+  export *
+  module * { export * }
+}

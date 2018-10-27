@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'Evolution Devices BT' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Evolution Devices BT
+  pod 'CocoaMQTT'
+  pod 'MSWeakTimer', '~> 1.1.0'
+  pod 'SwiftyXML', '~> 1.6.0'
+  pod 'iOSDFULibrary', '~> 4.1.2'
+  pod 'Charts', '~> 3.1.1'
+  pod 'UIColor+Hex', '~> 1.0.1'
+  pod 'PopupDialog', '~> 0.9'
+
+  target 'Evolution Devices BTTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Evolution Devices BTUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

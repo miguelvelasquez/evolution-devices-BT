@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Evolution Devices BT.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6816E4FF2114FB0300BD3FD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6816E5132114FB0600BD3FD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6816E51E2114FB0600BD3FD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
