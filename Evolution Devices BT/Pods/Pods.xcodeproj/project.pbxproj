@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -413,7 +413,7 @@
 		00318234B042912AEE5787204085E3F5 /* SquareShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SquareShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/SquareShapeRenderer.swift; sourceTree = "<group>"; };
 		013D9EC5E4201D187AEC637E36878AC1 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
 		015B8B31BE7F82E4F40395564E6B73B9 /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTMessage.swift; path = Source/CocoaMQTTMessage.swift; sourceTree = "<group>"; };
-		01645332F00432F89A28B90E8039CAFA /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01645332F00432F89A28B90E8039CAFA /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		017C5D0641AB9D4D5D57F09905A5C6E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F197CF8DDBA1F40AF6CF92FDB71785 /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
 		021E8BD1B437B570EFB1EE7DADE621AF /* ChartLimitLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartLimitLine.swift; path = Source/Charts/Components/ChartLimitLine.swift; sourceTree = "<group>"; };
@@ -430,7 +430,7 @@
 		085CCD8A6983EC9841E8ACF8205AB7CB /* DFUVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUVersion.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUVersion.swift; sourceTree = "<group>"; };
 		0963CEF2F6453342647317B4AF8AFAC5 /* ILineChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineChartDataSet.swift; sourceTree = "<group>"; };
 		097743C08C3EC0C4C0E74AF18231680D /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
-		098500CFD683C4A3F0874286D3DAE190 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098500CFD683C4A3F0874286D3DAE190 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A30093F71F520F7B686F2FABC85C660 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
 		0AAD48C1FC842E63489A019AEF993B98 /* DFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUControlPoint.swift; sourceTree = "<group>"; };
 		0B5A9487FE1D176056CDF456C41B9105 /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Charts/Utils/Transformer.swift; sourceTree = "<group>"; };
@@ -468,14 +468,14 @@
 		231370CDDDA87E2CF4649D6F7D469972 /* Pods-Evolution Devices BTUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Evolution Devices BTUITests-resources.sh"; sourceTree = "<group>"; };
 		232A61C62B3DD74477195AA90AAA401F /* CandleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleChartData.swift; path = Source/Charts/Data/Implementations/Standard/CandleChartData.swift; sourceTree = "<group>"; };
 		2436D432244357489BF9503B1ED6CBC7 /* DFUStreamBin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamBin.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamBin.swift; sourceTree = "<group>"; };
-		252F2008802C53588727964BAB0FAE46 /* Pods_Evolution_Devices_BT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Evolution_Devices_BT.framework; path = "Pods-Evolution Devices BT.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		252F2008802C53588727964BAB0FAE46 /* Pods_Evolution_Devices_BT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Devices_BT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		262F82A53B90DA0F1E98F425A212BEB6 /* LoggerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerHelper.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerHelper.swift; sourceTree = "<group>"; };
 		264289D2586240812D7CA99514F5F1BC /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
 		269A816DDA6A1CD49C180B9A5FC8057B /* Legend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Legend.swift; path = Source/Charts/Components/Legend.swift; sourceTree = "<group>"; };
 		26AD474EED8A1C2603D493F6A521ABC1 /* ChartAnimationEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartAnimationEasing.swift; path = Source/Charts/Animation/ChartAnimationEasing.swift; sourceTree = "<group>"; };
 		2765904D39C3F199286BB89BBF5E678D /* BarChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartDataProvider.swift; path = Source/Charts/Interfaces/BarChartDataProvider.swift; sourceTree = "<group>"; };
 		2851890616A666B0AD378319FA82BC84 /* CandleStickChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleStickChartView.swift; path = Source/Charts/Charts/CandleStickChartView.swift; sourceTree = "<group>"; };
-		2892BEC2F8BCFA01E0ADBD67D0E5D998 /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex.framework; path = "UIColor+Hex.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2892BEC2F8BCFA01E0ADBD67D0E5D998 /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		291497A0F6A73F49B570DAC5880CAC48 /* DFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheralDelegate.swift; sourceTree = "<group>"; };
 		293B43A6F00E83637EE6FF4358CDE1C0 /* DynamicBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.xcconfig; sourceTree = "<group>"; };
 		2976C71F08FFBB97157714137484FD71 /* CircleShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/CircleShapeRenderer.swift; sourceTree = "<group>"; };
@@ -483,7 +483,7 @@
 		2B86D4A95D84797B53317F6CC4333C60 /* ComponentBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComponentBase.swift; path = Source/Charts/Components/ComponentBase.swift; sourceTree = "<group>"; };
 		2BEB3A80CE20D4BFF1AF0D3ED8206B8F /* ChartDataRendererBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataRendererBase.swift; path = Source/Charts/Renderers/ChartDataRendererBase.swift; sourceTree = "<group>"; };
 		2E2508AC87EF9E1591F1E28DE0A2BA07 /* Pods-Evolution Devices BTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Evolution Devices BTUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2E4F08D97A2AB81F84A6A1792915F0DF /* Pods_Evolution_Devices_BTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Evolution_Devices_BTUITests.framework; path = "Pods-Evolution Devices BTUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4F08D97A2AB81F84A6A1792915F0DF /* Pods_Evolution_Devices_BTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Devices_BTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5DF2B7AD8EF2B662E2F87F2976F79E /* SoftdeviceBootloaderInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftdeviceBootloaderInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/SoftdeviceBootloaderInfo.swift; sourceTree = "<group>"; };
 		2E782335E98C4BC365A942EF8C2C1FDF /* DFUPeripheralSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelector.swift; sourceTree = "<group>"; };
 		305C613CB8526FA8E56771122F4DD055 /* CombinedChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartView.swift; path = Source/Charts/Charts/CombinedChartView.swift; sourceTree = "<group>"; };
@@ -495,7 +495,7 @@
 		36BA37F95165EA9FCBF57D53B2F5E0EA /* CombinedChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartDataProvider.swift; path = Source/Charts/Interfaces/CombinedChartDataProvider.swift; sourceTree = "<group>"; };
 		36D56F8E5CB8091553B0E803025125F2 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
 		3759184CA8D71B2449B6BB77FA87C585 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
-		38342EDF1C473DE3F10DCE520C9A1803 /* iOSDFULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSDFULibrary.framework; path = iOSDFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38342EDF1C473DE3F10DCE520C9A1803 /* iOSDFULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSDFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39057FF32B22C78DAF9663F9B30C88FF /* DynamicBlurView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-umbrella.h"; sourceTree = "<group>"; };
 		3A1717E5B78D3FE643A80BA3C8030B93 /* CandleStickChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleStickChartRenderer.swift; path = Source/Charts/Renderers/CandleStickChartRenderer.swift; sourceTree = "<group>"; };
 		3A4455ECDE43D850BC43CEF3705E077E /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
@@ -540,7 +540,7 @@
 		5FBE4B603C8E9A37C6C2C03860B1AFF3 /* BarLineScatterCandleBubbleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartData.swift; path = Source/Charts/Data/Implementations/Standard/BarLineScatterCandleBubbleChartData.swift; sourceTree = "<group>"; };
 		608D62B1D87B28DF4A64DF90C0FE7267 /* Pods-Evolution Devices BTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Evolution Devices BTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		611F5A2C0CAB460CDEDFFD954C44DA25 /* Pods-Evolution Devices BT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Evolution Devices BT-acknowledgements.plist"; sourceTree = "<group>"; };
-		61EE8E3E63C8C2D0EE25FF1FEDA76F23 /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicBlurView.framework; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61EE8E3E63C8C2D0EE25FF1FEDA76F23 /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BB36C75B9079B677B85E98B44E925F /* HorizontalBarChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalBarChartRenderer.swift; path = Source/Charts/Renderers/HorizontalBarChartRenderer.swift; sourceTree = "<group>"; };
 		63C34E25D482CCDF119023A1E3A85E6C /* Pods-Evolution Devices BTUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Evolution Devices BTUITests-umbrella.h"; sourceTree = "<group>"; };
 		63FD0C29FAFBEE91225C78F1CACA1D3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -566,7 +566,7 @@
 		78A84DA6B329722664AB3CE5B93317A3 /* AnimatedMoveViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMoveViewJob.swift; path = Source/Charts/Jobs/AnimatedMoveViewJob.swift; sourceTree = "<group>"; };
 		78C90A8EA39FACB5F46B70878E6C9C6B /* SwiftyTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTimer-umbrella.h"; sourceTree = "<group>"; };
 		78EA80867DB2AD73733D856AE6891D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7A564D37B71BF22B970873128DD59523 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		7A564D37B71BF22B970873128DD59523 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
 		7B3E104BE7945E5E4F02CC6C54E9AE64 /* LegacyDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUService.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Services/LegacyDFUService.swift; sourceTree = "<group>"; };
 		7B7AE0395D1113AB2802645559C5FCB6 /* LineScatterCandleRadarRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineScatterCandleRadarRenderer.swift; path = Source/Charts/Renderers/LineScatterCandleRadarRenderer.swift; sourceTree = "<group>"; };
 		7C7CCD12E7F220A778DEA828EA70A20E /* AnimatedViewPortJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedViewPortJob.swift; path = Source/Charts/Jobs/AnimatedViewPortJob.swift; sourceTree = "<group>"; };
@@ -600,7 +600,7 @@
 		90E327A34C8C0AD94F63C8501AA3F51B /* ChartHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartHighlighter.swift; path = Source/Charts/Highlight/ChartHighlighter.swift; sourceTree = "<group>"; };
 		914C782B47DFC0A1FAA664DDC2689A98 /* IFillFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IFillFormatter.swift; path = Source/Charts/Formatters/IFillFormatter.swift; sourceTree = "<group>"; };
 		92C5396BE00398ED1C66D42D4C532DF2 /* BubbleChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartRenderer.swift; path = Source/Charts/Renderers/BubbleChartRenderer.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93D9106B7C16A264580C5782CBE23D65 /* LegendRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegendRenderer.swift; path = Source/Charts/Renderers/LegendRenderer.swift; sourceTree = "<group>"; };
 		93D914CC8609A1F0E680DBB43C75340B /* ChartUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartUtils.swift; path = Source/Charts/Utils/ChartUtils.swift; sourceTree = "<group>"; };
 		9423F0F652AC2485957B708F6E052D15 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
@@ -614,9 +614,9 @@
 		99C600F999CDA732A8AB2E0AE1E4BAD5 /* ButtonlessDFU.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonlessDFU.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/ButtonlessDFU.swift; sourceTree = "<group>"; };
 		9A97C4CE8755E8EE0E8C2C73800C84E9 /* CocoaMQTT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTT.swift; path = Source/CocoaMQTT.swift; sourceTree = "<group>"; };
 		9B2584F9200FDBBCDBE61218FA3CA3D9 /* IntelHex2BinConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntelHex2BinConverter.h; path = iOSDFULibrary/Classes/Utilities/HexToBinConverter/IntelHex2BinConverter.h; sourceTree = "<group>"; };
-		9B886C845FC410825D94AAE48CD1D475 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Charts.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B886C845FC410825D94AAE48CD1D475 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB1A69799C9CAD79C5D4F7ADB221C74 /* PieHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieHighlighter.swift; path = Source/Charts/Highlight/PieHighlighter.swift; sourceTree = "<group>"; };
-		9CBC6579AD579EF22E30E343B4350226 /* SwiftyXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyXML.framework; path = SwiftyXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBC6579AD579EF22E30E343B4350226 /* SwiftyXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF2209CF1DD70DCBDF5440F4CAE21EA /* DFUStreamHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamHex.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamHex.swift; sourceTree = "<group>"; };
 		9E0FC396E3C8168B12EF642136B97721 /* CocoaMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaMQTT-dummy.m"; sourceTree = "<group>"; };
 		9ED1069767268A71C9CA6B9A03203250 /* Pods-Evolution Devices BTTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Evolution Devices BTTests-umbrella.h"; sourceTree = "<group>"; };
@@ -637,7 +637,7 @@
 		A69B1657B788FA73A2B5264C5ED918E6 /* LoggerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerDelegate.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerDelegate.swift; sourceTree = "<group>"; };
 		A72248B2256A009A90FF49E52DCE0A7E /* LineChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/LineChartDataSet.swift; sourceTree = "<group>"; };
 		A84DE5E555193E34B6F648804FEAD4A0 /* MSWeakTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
-		A8D2E59BE539A24A20AC11E25FA1128F /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		A8D2E59BE539A24A20AC11E25FA1128F /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
 		AAD381B953D3C98BC4F1B9F13B7069B7 /* SwiftyXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyXML-umbrella.h"; sourceTree = "<group>"; };
 		AB8A2B4E32A3B3F8BA6FDD9A353F359D /* iOSDFULibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDFULibrary-dummy.m"; sourceTree = "<group>"; };
 		AC8923B3CF1D660EC8371EE2ED6DD358 /* Pods-Evolution Devices BTTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Evolution Devices BTTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -666,17 +666,17 @@
 		BEA49784EEB5E3232758B94A4E9C903B /* AxisBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AxisBase.swift; path = Source/Charts/Components/AxisBase.swift; sourceTree = "<group>"; };
 		BF789EC2E3281871412B517995D24A29 /* AxisRendererBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AxisRendererBase.swift; path = Source/Charts/Renderers/AxisRendererBase.swift; sourceTree = "<group>"; };
 		BF81D5A691313B6DD6E229940595159B /* XAxisRendererRadarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XAxisRendererRadarChart.swift; path = Source/Charts/Renderers/XAxisRendererRadarChart.swift; sourceTree = "<group>"; };
-		BF92684465E50756279CF3C794DBD45B /* Pods_Evolution_Devices_BTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Evolution_Devices_BTTests.framework; path = "Pods-Evolution Devices BTTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF92684465E50756279CF3C794DBD45B /* Pods_Evolution_Devices_BTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Devices_BTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00168A4D263F6332C8F424410E60F02 /* Pods-Evolution Devices BT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Evolution Devices BT.release.xcconfig"; sourceTree = "<group>"; };
 		C08B511152316A1D015D4E3781438B4F /* ManifestFirmwareInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManifestFirmwareInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/ManifestFirmwareInfo.swift; sourceTree = "<group>"; };
 		C0F81BC63C358F36C5B292BBF4081D92 /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
 		C120E989B3E0F537BE55C5831F2F7956 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
 		C240D9CC09252211175C853193AE25A5 /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = Source/Charts/Highlight/Range.swift; sourceTree = "<group>"; };
-		C25604A636510BFA67DC50B10883CA76 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25604A636510BFA67DC50B10883CA76 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BDA8ED67FCD9EDA6257B561A5F31D3 /* ChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/ChartDataSet.swift; sourceTree = "<group>"; };
 		C426EFC610F5E575957F663041375D3C /* CocoaMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaMQTT-prefix.pch"; sourceTree = "<group>"; };
 		C46C7085E3F30374724214567B9A7D93 /* DFUStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStream.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStream.swift; sourceTree = "<group>"; };
-		C49A861328301887E4D105E51FD2C0C2 /* MSWeakTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSWeakTimer.framework; path = MSWeakTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49A861328301887E4D105E51FD2C0C2 /* MSWeakTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSWeakTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57B28547EE6A0D286A45CA62475A16B /* SecureDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheral.swift; sourceTree = "<group>"; };
 		C6C47FFB48AD3565BEA696601932007A /* Charts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Charts.xcconfig; sourceTree = "<group>"; };
 		C7BF5845BCE47DBF2CC1C456446D55A5 /* ChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartData.swift; path = Source/Charts/Data/Implementations/Standard/ChartData.swift; sourceTree = "<group>"; };
@@ -686,7 +686,7 @@
 		CBF29A05666C21F681A4CFA083FD54E0 /* HorizontalBarChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalBarChartView.swift; path = Source/Charts/Charts/HorizontalBarChartView.swift; sourceTree = "<group>"; };
 		CCCD8DB43FD8C7F20239EA30EE050E73 /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
 		CCDA48D3059B51D3550BA268B20BEE7C /* ICandleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICandleChartDataSet.swift; path = Source/Charts/Data/Interfaces/ICandleChartDataSet.swift; sourceTree = "<group>"; };
-		CCE84752A8A6F6DD3030ACD529E598C6 /* SwiftyTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyTimer.framework; path = SwiftyTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE84752A8A6F6DD3030ACD529E598C6 /* SwiftyTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF15DE0A3A99995F5BF74684D94297D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD250C6A063172EEFA59C4CDAFBC5C30 /* DynamicBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicBlurView-dummy.m"; sourceTree = "<group>"; };
 		CDF7CD1015A147C55900997654721023 /* RadarChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartView.swift; path = Source/Charts/Charts/RadarChartView.swift; sourceTree = "<group>"; };
@@ -696,7 +696,7 @@
 		CFAB15F207873510743E832E4D82F6B2 /* PieChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/PieChartDataEntry.swift; sourceTree = "<group>"; };
 		D153B2A555D0570DD2C8C43FB28FF133 /* BubbleChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartDataEntry.swift; sourceTree = "<group>"; };
 		D1FBEE25E9BF2588DA4404C1582AB4AD /* CGImage+Accelerate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Accelerate.swift"; path = "DynamicBlurView/CGImage+Accelerate.swift"; sourceTree = "<group>"; };
-		D24E533D657122983C49373EE8598BAE /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		D24E533D657122983C49373EE8598BAE /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		D2B924DEE2FA4331BB08A636C045E61B /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
 		D39991ADE200AF041350981FD0F180F5 /* crc32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = crc32.swift; path = iOSDFULibrary/Classes/Utilities/crc32.swift; sourceTree = "<group>"; };
 		D54F2A2FA3695836E41283744BC9515B /* BarLineScatterCandleBubbleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BarLineScatterCandleBubbleChartDataSet.swift; sourceTree = "<group>"; };
@@ -732,7 +732,7 @@
 		EE0C83BCCBF2094AB17D2026C26B7679 /* CrossShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/CrossShapeRenderer.swift; sourceTree = "<group>"; };
 		EF3178252052A337F9D8E52E21638811 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
 		EFB1FA132A1D017487D981B04344F731 /* Pods-Evolution Devices BTUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Evolution Devices BTUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EFD4F3900CA271262893D5277E624027 /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaMQTT.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD4F3900CA271262893D5277E624027 /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7F4F6E69D7B1C1BFE0BDD49096782 /* YAxisRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAxisRenderer.swift; path = Source/Charts/Renderers/YAxisRenderer.swift; sourceTree = "<group>"; };
 		EFF1B80E38D1868E6ADD171C1F5F2955 /* ChartBaseDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartBaseDataSet.swift; path = Source/Charts/Data/Implementations/ChartBaseDataSet.swift; sourceTree = "<group>"; };
 		F07D8CB692619DD90B7FE65785BC066E /* Pods-Evolution Devices BT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Evolution Devices BT-umbrella.h"; sourceTree = "<group>"; };
@@ -904,7 +904,6 @@
 				4582A69F92ED31273DDED7EFDB339843 /* XML.swift */,
 				76D804D33071CD29F271E8ADBB616426 /* Support Files */,
 			);
-			name = SwiftyXML;
 			path = SwiftyXML;
 			sourceTree = "<group>";
 		};
@@ -945,7 +944,6 @@
 				212DC4266F9DA80A6D34F4EC1AB6D2B6 /* GCDAsyncUdpSocket.m */,
 				6A59EAB40B160854BC39E642E682EB8D /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -969,7 +967,6 @@
 				E24F191875C8488693C724FDCAE47C2C /* Support Files */,
 				94F18CBD5C06C76264AEE76353280208 /* UIColor */,
 			);
-			name = "UIColor+Hex";
 			path = "UIColor+Hex";
 			sourceTree = "<group>";
 		};
@@ -986,7 +983,6 @@
 				83D4E12A4D02FC975027A7C3EAB4507F /* UIImage+Blur.swift */,
 				398F25F3A4D5970EDDB2331673979507 /* Support Files */,
 			);
-			name = DynamicBlurView;
 			path = DynamicBlurView;
 			sourceTree = "<group>";
 		};
@@ -997,7 +993,6 @@
 				A84DE5E555193E34B6F648804FEAD4A0 /* MSWeakTimer.m */,
 				15C244BB8729CB1F0E935348C4B69BBA /* Support Files */,
 			);
-			name = MSWeakTimer;
 			path = MSWeakTimer;
 			sourceTree = "<group>";
 		};
@@ -1035,7 +1030,6 @@
 				8852A3F8F846E84306D9B64F9AF1C178 /* SwiftyTimer.swift */,
 				DD3BC3CC24BBB816CF6578BCBF11B7C7 /* Support Files */,
 			);
-			name = SwiftyTimer;
 			path = SwiftyTimer;
 			sourceTree = "<group>";
 		};
@@ -1062,7 +1056,6 @@
 				015B8B31BE7F82E4F40395564E6B73B9 /* CocoaMQTTMessage.swift */,
 				0670CD123E51DA120652F5AFB25DB78C /* Support Files */,
 			);
-			name = CocoaMQTT;
 			path = CocoaMQTT;
 			sourceTree = "<group>";
 		};
@@ -1083,7 +1076,6 @@
 				B2A9A7F2C2BFB0C71C35BFA3482C8DDE /* Core */,
 				8EE14A1A7652C5F58FA2432B523ABE77 /* Support Files */,
 			);
-			name = Charts;
 			path = Charts;
 			sourceTree = "<group>";
 		};
@@ -1156,7 +1148,6 @@
 				1B241F95C471CDB2392C23D4F55B11DF /* ZipUtilities.swift */,
 				6B308D465A72547DE3A93A9C32D94EE9 /* Support Files */,
 			);
-			name = Zip;
 			path = Zip;
 			sourceTree = "<group>";
 		};
@@ -1209,7 +1200,6 @@
 				E7C168665374E7BF557C5B5D93929DC2 /* ZipArchive.swift */,
 				C61A7C4757D89425C6214C4C9F6F9107 /* Support Files */,
 			);
-			name = iOSDFULibrary;
 			path = iOSDFULibrary;
 			sourceTree = "<group>";
 		};
@@ -1476,7 +1466,6 @@
 				8ACBEF903B16283CA29E34FC8438B636 /* UIViewController+Visibility.swift */,
 				28D25475269AFAE9255DDC82181B9229 /* Support Files */,
 			);
-			name = PopupDialog;
 			path = PopupDialog;
 			sourceTree = "<group>";
 		};
@@ -1911,7 +1900,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1000;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2397,11 +2386,7 @@
 				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
 				PRODUCT_MODULE_NAME = iOSDFULibrary;
 				PRODUCT_NAME = iOSDFULibrary;
@@ -2434,11 +2419,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Evolution Devices BT/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Evolution Devices BT/Pods-Evolution Devices BT.modulemap";
 				OTHER_LDFLAGS = "";
@@ -2473,11 +2454,7 @@
 				INFOPLIST_FILE = "Target Support Files/MSWeakTimer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MSWeakTimer/MSWeakTimer.modulemap";
 				PRODUCT_MODULE_NAME = MSWeakTimer;
 				PRODUCT_NAME = MSWeakTimer;
@@ -2508,11 +2485,7 @@
 				INFOPLIST_FILE = "Target Support Files/DynamicBlurView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView.modulemap";
 				PRODUCT_MODULE_NAME = DynamicBlurView;
 				PRODUCT_NAME = DynamicBlurView;
@@ -2545,11 +2518,7 @@
 				INFOPLIST_FILE = "Target Support Files/Zip/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
 				PRODUCT_MODULE_NAME = Zip;
 				PRODUCT_NAME = Zip;
@@ -2581,11 +2550,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyTimer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyTimer/SwiftyTimer.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyTimer;
 				PRODUCT_NAME = SwiftyTimer;
@@ -2681,11 +2646,7 @@
 				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
 				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
 				PRODUCT_NAME = CocoaAsyncSocket;
@@ -2717,11 +2678,7 @@
 				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
 				PRODUCT_MODULE_NAME = PopupDialog;
 				PRODUCT_NAME = PopupDialog;
@@ -2754,11 +2711,7 @@
 				INFOPLIST_FILE = "Target Support Files/Zip/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
 				PRODUCT_MODULE_NAME = Zip;
 				PRODUCT_NAME = Zip;
@@ -2791,11 +2744,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Evolution Devices BTTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Evolution Devices BTTests/Pods-Evolution Devices BTTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -2828,11 +2777,7 @@
 				INFOPLIST_FILE = "Target Support Files/DynamicBlurView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView.modulemap";
 				PRODUCT_MODULE_NAME = DynamicBlurView;
 				PRODUCT_NAME = DynamicBlurView;
@@ -2864,11 +2809,7 @@
 				INFOPLIST_FILE = "Target Support Files/Charts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Charts/Charts.modulemap";
 				PRODUCT_MODULE_NAME = Charts;
 				PRODUCT_NAME = Charts;
@@ -2900,11 +2841,7 @@
 				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
 				PRODUCT_MODULE_NAME = iOSDFULibrary;
 				PRODUCT_NAME = iOSDFULibrary;
@@ -2936,11 +2873,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Evolution Devices BTUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Evolution Devices BTUITests/Pods-Evolution Devices BTUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -2973,11 +2906,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Evolution Devices BTTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Evolution Devices BTTests/Pods-Evolution Devices BTTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -3011,11 +2940,7 @@
 				INFOPLIST_FILE = "Target Support Files/CocoaMQTT/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT.modulemap";
 				PRODUCT_MODULE_NAME = CocoaMQTT;
 				PRODUCT_NAME = CocoaMQTT;
@@ -3048,11 +2973,7 @@
 				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
 				PRODUCT_MODULE_NAME = PopupDialog;
 				PRODUCT_NAME = PopupDialog;
@@ -3084,11 +3005,7 @@
 				INFOPLIST_FILE = "Target Support Files/MSWeakTimer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MSWeakTimer/MSWeakTimer.modulemap";
 				PRODUCT_MODULE_NAME = MSWeakTimer;
 				PRODUCT_NAME = MSWeakTimer;
@@ -3120,11 +3037,7 @@
 				INFOPLIST_FILE = "Target Support Files/Charts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Charts/Charts.modulemap";
 				PRODUCT_MODULE_NAME = Charts;
 				PRODUCT_NAME = Charts;
@@ -3157,11 +3070,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Evolution Devices BTUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Evolution Devices BTUITests/Pods-Evolution Devices BTUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -3195,11 +3104,7 @@
 				INFOPLIST_FILE = "Target Support Files/UIColor+Hex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIColor+Hex/UIColor+Hex.modulemap";
 				PRODUCT_MODULE_NAME = UIColor_Hex;
 				PRODUCT_NAME = UIColor_Hex;
@@ -3230,11 +3135,7 @@
 				INFOPLIST_FILE = "Target Support Files/CocoaMQTT/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT.modulemap";
 				PRODUCT_MODULE_NAME = CocoaMQTT;
 				PRODUCT_NAME = CocoaMQTT;
@@ -3266,11 +3167,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyXML/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyXML/SwiftyXML.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyXML;
 				PRODUCT_NAME = SwiftyXML;
@@ -3302,11 +3199,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyXML/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyXML/SwiftyXML.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyXML;
 				PRODUCT_NAME = SwiftyXML;
@@ -3339,11 +3232,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Evolution Devices BT/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Evolution Devices BT/Pods-Evolution Devices BT.modulemap";
 				OTHER_LDFLAGS = "";
@@ -3378,11 +3267,7 @@
 				INFOPLIST_FILE = "Target Support Files/UIColor+Hex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIColor+Hex/UIColor+Hex.modulemap";
 				PRODUCT_MODULE_NAME = UIColor_Hex;
 				PRODUCT_NAME = UIColor_Hex;
@@ -3414,11 +3299,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyTimer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyTimer/SwiftyTimer.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyTimer;
 				PRODUCT_NAME = SwiftyTimer;
@@ -3450,11 +3331,7 @@
 				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
 				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
 				PRODUCT_NAME = CocoaAsyncSocket;
@@ -3522,6 +3399,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

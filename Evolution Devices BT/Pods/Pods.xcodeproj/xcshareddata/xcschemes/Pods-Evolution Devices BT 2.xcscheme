@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75E02740AD2735D14352B0818997822B"
-               BuildableName = "Pods_Evolution_Devices_BTTests.framework"
-               BlueprintName = "Pods-Evolution Devices BTTests"
+               BlueprintIdentifier = "31C23A80B887FF7DFD10F59E7A46D43F"
+               BuildableName = "Pods_Evolution_Devices_BT.framework"
+               BlueprintName = "Pods-Evolution Devices BT"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "75E02740AD2735D14352B0818997822B"
-            BuildableName = "Pods_Evolution_Devices_BTTests.framework"
-            BlueprintName = "Pods-Evolution Devices BTTests"
+            BlueprintIdentifier = "31C23A80B887FF7DFD10F59E7A46D43F"
+            BuildableName = "Pods_Evolution_Devices_BT.framework"
+            BlueprintName = "Pods-Evolution Devices BT"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "31C23A80B887FF7DFD10F59E7A46D43F"
+            BuildableName = "Pods_Evolution_Devices_BT.framework"
+            BlueprintName = "Pods-Evolution Devices BT"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

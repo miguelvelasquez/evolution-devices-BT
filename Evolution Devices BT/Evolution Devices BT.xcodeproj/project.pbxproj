@@ -58,6 +58,7 @@
 		683F6F0A2124D45100554CB8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F6F092124D45100554CB8 /* HelpViewController.swift */; };
 		683F6F0C2124D4C700554CB8 /* DataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F6F0B2124D4C700554CB8 /* DataFormatter.swift */; };
 		683F6F0E2126522800554CB8 /* StyleBelt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683F6F0D2126522800554CB8 /* StyleBelt.swift */; };
+		6843A50921850D0D00430C2B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843A50821850D0D00430C2B /* Config.swift */; };
 		685894FB2121EBF800BB4601 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685894FA2121EBF800BB4601 /* Preferences.swift */; };
 		68653A8C2118C9FB001BAC33 /* UartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68653A8B2118C9FB001BAC33 /* UartStyle.swift */; };
 		68653A8E2118CB1F001BAC33 /* CocoaCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68653A8D2118CB1F001BAC33 /* CocoaCompatibility.swift */; };
@@ -75,6 +76,7 @@
 		6898A16D211922BD00918824 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6898A16C211922BD00918824 /* PeripheralTableViewCell.swift */; };
 		68B42579217E243100C0E9C8 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B42578217E243100C0E9C8 /* ScanViewController.xib */; };
 		68B4257B217EC29100C0E9C8 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B4257A217EC29100C0E9C8 /* ScanViewController.swift */; };
+		68F970412184455A006E14B7 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F970402184455A006E14B7 /* ModelController.swift */; };
 		68FB5D53217F73B6009DE125 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FB5D52217F73B5009DE125 /* DeviceTableViewCell.swift */; };
 		68FFFEB32180C0530070B6D2 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68FFFEB22180C0530070B6D2 /* DeviceTableViewCell.xib */; };
 		975D0B3428642D89655C5F40 /* Pods_Evolution_Devices_BTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7834E93BEAA4C1D49F04D17 /* Pods_Evolution_Devices_BTTests.framework */; };
@@ -123,7 +125,7 @@
 		6816E51F2114FB0600BD3FD0 /* Evolution Devices BTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Evolution Devices BTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6816E5232114FB0600BD3FD0 /* Evolution_Devices_BTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution_Devices_BTUITests.swift; sourceTree = "<group>"; };
 		6816E5252114FB0600BD3FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6816E5342114FF0A00BD3FD0 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = "../../../Downloads/Bluefruit_LE_Connect_v2-master/Bluefruit/Platform/iOS/Config.swift"; sourceTree = "<group>"; };
+		6816E5342114FF0A00BD3FD0 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ../Resources/Config.swift; sourceTree = "<group>"; };
 		6816E53A2115045000BD3FD0 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		6816E54121150A7E00BD3FD0 /* PeripheralList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralList.swift; sourceTree = "<group>"; };
 		6816E54321150AC400BD3FD0 /* RssiUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssiUI.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		683F6F092124D45100554CB8 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		683F6F0B2124D4C700554CB8 /* DataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatter.swift; sourceTree = "<group>"; };
 		683F6F0D2126522800554CB8 /* StyleBelt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleBelt.swift; sourceTree = "<group>"; };
+		6843A50821850D0D00430C2B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		685894FA2121EBF800BB4601 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		68653A8B2118C9FB001BAC33 /* UartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartStyle.swift; sourceTree = "<group>"; };
 		68653A8D2118CB1F001BAC33 /* CocoaCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCompatibility.swift; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 		6898A16C211922BD00918824 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
 		68B42578217E243100C0E9C8 /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		68B4257A217EC29100C0E9C8 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		68F970402184455A006E14B7 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		68FB5D52217F73B5009DE125 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		68FFFEB22180C0530070B6D2 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 		6A52323EB6287B7C4570C4A5 /* Pods-Evolution Devices BTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution Devices BTTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Evolution Devices BTTests/Pods-Evolution Devices BTTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -267,7 +271,7 @@
 				6816E51A2114FB0600BD3FD0 /* Info.plist */,
 			);
 			path = "Evolution Devices BTTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		6816E5222114FB0600BD3FD0 /* Evolution Devices BTUITests */ = {
 			isa = PBXGroup;
@@ -302,6 +306,7 @@
 				682D0A562118BD6E002B0B4A /* EmptyDetailsViewController.swift */,
 				68FB5D52217F73B5009DE125 /* DeviceTableViewCell.swift */,
 				68B4257A217EC29100C0E9C8 /* ScanViewController.swift */,
+				68F970402184455A006E14B7 /* ModelController.swift */,
 				6828630A217D873F00B56168 /* DashboardViewController.swift */,
 				683F6F092124D45100554CB8 /* HelpViewController.swift */,
 			);
@@ -404,6 +409,7 @@
 		682A46BF2121F54300ACC288 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6843A50821850D0D00430C2B /* Config.swift */,
 				6820E08221224FA6001ED07B /* GattUUIDs.plist */,
 				683F6EF62124CDA900554CB8 /* localization */,
 			);
@@ -789,6 +795,7 @@
 				688829B92119259E001E9FA2 /* StyledConnectButton.swift in Sources */,
 				682F17F02115179E00FBECDC /* MqqtManager.swift in Sources */,
 				6802929C211512AE007960DC /* UartSettings.swift in Sources */,
+				6843A50921850D0D00430C2B /* Config.swift in Sources */,
 				681A08F321153250007ED9F8 /* KeyboardPositionNotifier.swift in Sources */,
 				6816E54221150A7E00BD3FD0 /* PeripheralList.swift in Sources */,
 				6802928D21151144007960DC /* UartDataManager.swift in Sources */,
@@ -811,6 +818,7 @@
 				688829BB2119260A001E9FA2 /* IntrinsicSizeWithInsetsButton.swift in Sources */,
 				683F6F0E2126522800554CB8 /* StyleBelt.swift in Sources */,
 				6802928F21151158007960DC /* UartLogManager.swift in Sources */,
+				68F970412184455A006E14B7 /* ModelController.swift in Sources */,
 				68FB5D53217F73B6009DE125 /* DeviceTableViewCell.swift in Sources */,
 				6816E55021150C4D00BD3FD0 /* BlePeripheral+Battery.swift in Sources */,
 				681A08EF2115321C007ED9F8 /* DataDownloader.swift in Sources */,
