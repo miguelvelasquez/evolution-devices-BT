@@ -132,7 +132,7 @@
 		6816E54621150B2800BD3FD0 /* PlotterModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotterModuleManager.swift; sourceTree = "<group>"; };
 		6816E54D21150C1F00BD3FD0 /* BleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
 		6816E54F21150C4D00BD3FD0 /* BlePeripheral+Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlePeripheral+Battery.swift"; sourceTree = "<group>"; };
-		681A08E421152452007ED9F8 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalizationManager.swift; path = "/Users/miguelvelasquez/Evolution Devices BT/Evolution Devices BT/Common/LocalizationManager.swift"; sourceTree = "<absolute>"; };
+		681A08E421152452007ED9F8 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		681A08E621152615007ED9F8 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		681A08E8211531D1007ED9F8 /* CommandQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandQueue.swift; sourceTree = "<group>"; };
 		681A08EA211531F1007ED9F8 /* Data+ScanValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ScanValue.swift"; sourceTree = "<group>"; };
