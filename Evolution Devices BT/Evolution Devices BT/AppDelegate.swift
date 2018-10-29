@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let dashboardViewController = window?.rootViewController as? DashboardViewController {
+            dashboardViewController.modelController = ModelController()
+        }
+        
         // Customize default button appearance
         let db = DefaultButton.appearance()
         db.titleFont      = UIFont(name: "HelveticaNeue-Medium", size: 14)!

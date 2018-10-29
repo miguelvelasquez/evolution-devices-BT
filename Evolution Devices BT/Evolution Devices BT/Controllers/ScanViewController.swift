@@ -30,6 +30,8 @@ class ScanViewController: UIViewController {
     fileprivate var isScannerTableWaitingForReload = false
     fileprivate var isBaseTableAnimating = false
     
+    var modelController: ModelController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         baseTableView.register(UINib(nibName: "DeviceTableViewCell", bundle: nil), forCellReuseIdentifier: "peripheralCell")
@@ -86,12 +88,15 @@ class ScanViewController: UIViewController {
         // Connect to selected peripheral
         selectedPeripheral = peripheral
         BleManager.shared.connect(to: peripheral)
+        modelController.appState.setConnected(peripheral: peripheral)
         reloadBaseTable()
+        
     }
     
     fileprivate func disconnect(peripheral: BlePeripheral) {
         selectedPeripheral = nil
         BleManager.shared.disconnect(from: peripheral)
+        modelController.appState.setDisconnected(peripheral: peripheral)
         reloadBaseTable()
     }
     
@@ -389,7 +394,7 @@ extension ScanViewController: UITableViewDataSource {
         
         peripheralCell.connected = connected
         if connected {
-            peripheralCell.button.setTitle("Disconnect", for: .normal)
+            peripheralCell.setButtonColorConnected()
         } else {
             peripheralCell.button.setTitle("Connect", for: .normal)
         }

@@ -34,7 +34,7 @@ class PeripheralModulesViewController: UIViewController {
     }
     
     private var emptyViewController: EmptyDetailsViewController?
-    fileprivate var hasUart = false
+    fileprivate var hasUart = true
     fileprivate var rssiRefreshTimer: MSWeakTimer?
     
     fileprivate var batteryLevel: Int?

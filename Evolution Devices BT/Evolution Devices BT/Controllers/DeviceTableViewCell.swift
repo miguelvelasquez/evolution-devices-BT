@@ -17,15 +17,25 @@ class DeviceTableViewCell: UITableViewCell {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var deviceNameLabel: UILabel!
     @IBAction func buttonPressed(_ sender: UIButton) {
-        button.borderColor = UIColor(hexString: "#1793FE")
-        button.setTitleColor(UIColor(hexString: "#ffffff"), for: .normal)
-        button.backgroundColor = UIColor(hexString: "#1793FE")
         onClick?()
     }
     
     // Params
     var onClick: (() -> Void)?
     var connected: Bool?
+    
+    // UI
+    func setButtonColorConnected() {
+        button.borderColor = UIColor(hexString: "#1793FE")
+        button.setTitleColor(UIColor(hexString: "#ffffff"), for: .normal)
+        button.backgroundColor = UIColor(hexString: "#1793FE")
+    }
+    
+    func setButtonColorDisconnected() {
+        button.borderColor = UIColor(hexString: "#1793FE")
+        button.setTitleColor(UIColor(hexString: "#1793FE"), for: .normal)
+        button.backgroundColor = UIColor(hexString: "#ffffff")
+    }
     
     // Data
     fileprivate var cachedExtendedViewPeripheralId: UUID?

@@ -30,6 +30,8 @@ class DashboardViewController: UIViewController {
         showStandardDialog()
     }
     
+    var modelController: ModelController!
+    
     
     /*!
      Displays the default dialog without image, just as the system dialog
@@ -55,6 +57,7 @@ class DashboardViewController: UIViewController {
         
         // Create second button
         let buttonTwo = DefaultButton(title: "SCAN", dismissOnTap: false) {
+            scanVC.modelController = self.modelController
             scanVC.imageView.image = UIImage(named: "device_connection")
             self.plotterImage.alpha = 0.8
             self.controllerImage.alpha = 0.8
@@ -72,8 +75,13 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonImageView.image = UIImage(named: "device_unconnected")
-        buttonText.text = "Not Connected"
+        if modelController.appState.isConnected() {
+            buttonImageView.image = UIImage(named: "device_connection")
+            buttonText.text = "Connected"
+        } else {
+            buttonImageView.image = UIImage(named: "device_unconnected")
+            buttonText.text = "Not Connected"
+        }
     }
     
     override func didReceiveMemoryWarning() {

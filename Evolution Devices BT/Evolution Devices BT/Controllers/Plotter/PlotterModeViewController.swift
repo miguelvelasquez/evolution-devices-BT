@@ -12,7 +12,6 @@ import Charts
 class PlotterModeViewController: PeripheralModeViewController {
     
     // UI
-    
     @IBOutlet weak var chartView: LineChartView!
     @IBOutlet weak var autoscrollButton: UISwitch!
     @IBOutlet weak var xMaxEntriesSlider: UISlider!
@@ -53,7 +52,7 @@ class PlotterModeViewController: PeripheralModeViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         // Enable Uart
         setupUart()
     }
@@ -193,7 +192,7 @@ class PlotterModeViewController: PeripheralModeViewController {
         let color = colors[index % colors.count]
         dataSet.setColor(color)
         dataSet.lineDashLengths = lineDashForPeripheral[identifier]!
-//        DLog("color: \(color.hexString()!)")
+        DLog("color: \(color.hexString()!)")
         
         if dataSetsForPeripheral[identifier] != nil {
             dataSetsForPeripheral[identifier]!.append(dataSet)
@@ -203,16 +202,16 @@ class PlotterModeViewController: PeripheralModeViewController {
     }
     
     // MARK: - Actions
-//    @IBAction func onClickHelp(_  sender: UIBarButtonItem) {
-//        let localizationManager = LocalizationManager.shared
-//        let helpViewController = storyboard!.instantiateViewController(withIdentifier: "HelpViewController") as! HelpViewController
-//        helpViewController.setHelp(localizationManager.localizedString("plotter_help_text"), title: localizationManager.localizedString("plotter_help_title"))
-//        let helpNavigationController = UINavigationController(rootViewController: helpViewController)
-//        helpNavigationController.modalPresentationStyle = .popover
-//        helpNavigationController.popoverPresentationController?.barButtonItem = sender
-//
-//        present(helpNavigationController, animated: true, completion: nil)
-//    }
+    @IBAction func onClickHelp(_  sender: UIBarButtonItem) {
+        let localizationManager = LocalizationManager.shared
+        let helpViewController = storyboard!.instantiateViewController(withIdentifier: "HelpViewController") as! HelpViewController
+        helpViewController.setHelp(localizationManager.localizedString("plotter_help_text"), title: localizationManager.localizedString("plotter_help_title"))
+        let helpNavigationController = UINavigationController(rootViewController: helpViewController)
+        helpNavigationController.modalPresentationStyle = .popover
+        helpNavigationController.popoverPresentationController?.barButtonItem = sender
+        
+        present(helpNavigationController, animated: true, completion: nil)
+    }
     
     @IBAction func onAutoScrollChanged(_ sender: Any) {
         isAutoScrollEnabled = !isAutoScrollEnabled
@@ -235,7 +234,6 @@ extension PlotterModeViewController: UartDataManagerDelegate {
         // DLog("uart rx read (utf8): \(String(data: data, encoding: .utf8) ?? "<invalid>")")
         
         guard let lastSeparatorRange = data.range(of: PlotterModeViewController.kLineSeparator, options: .backwards, in: nil) else { return }
-        
         let subData = data.subdata(in: 0..<lastSeparatorRange.upperBound)
         if let dataString = String(data: subData, encoding: .utf8) {
             
