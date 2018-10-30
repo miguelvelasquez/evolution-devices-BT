@@ -496,7 +496,6 @@ extension ScannerViewController: UITableViewDataSource {
         if isDetailViewOpen {
             peripheralCell.setupPeripheralExtendedView(peripheral: peripheral)
         }
-        DLog("cell populated")
         return peripheralCell
     }
 }

@@ -22,7 +22,6 @@
 		6816E50E2114FB0500BD3FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6816E50C2114FB0500BD3FD0 /* LaunchScreen.storyboard */; };
 		6816E5192114FB0600BD3FD0 /* Evolution_Devices_BTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816E5182114FB0600BD3FD0 /* Evolution_Devices_BTTests.swift */; };
 		6816E5242114FB0600BD3FD0 /* Evolution_Devices_BTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816E5232114FB0600BD3FD0 /* Evolution_Devices_BTUITests.swift */; };
-		6816E5352114FF0A00BD3FD0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816E5342114FF0A00BD3FD0 /* Config.swift */; };
 		6816E53B2115045000BD3FD0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816E53A2115045000BD3FD0 /* ScannerViewController.swift */; };
 		6816E54221150A7E00BD3FD0 /* PeripheralList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816E54121150A7E00BD3FD0 /* PeripheralList.swift */; };
 		6816E54421150AC400BD3FD0 /* RssiUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816E54321150AC400BD3FD0 /* RssiUI.swift */; };
@@ -72,6 +71,7 @@
 		688829BB2119260A001E9FA2 /* IntrinsicSizeWithInsetsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688829BA2119260A001E9FA2 /* IntrinsicSizeWithInsetsButton.swift */; };
 		688829BD211CADCA001E9FA2 /* PeripheralModulesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688829BC211CADCA001E9FA2 /* PeripheralModulesTableViewCell.swift */; };
 		688829BF211CBA3F001E9FA2 /* StyleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688829BE211CBA3F001E9FA2 /* StyleConfig.swift */; };
+		6895FB7621866C3B0084B063 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6895FB7521866C3B0084B063 /* State.swift */; };
 		6898A16B2118ED4500918824 /* ModeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6898A16A2118ED4500918824 /* ModeTabViewController.swift */; };
 		6898A16D211922BD00918824 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6898A16C211922BD00918824 /* PeripheralTableViewCell.swift */; };
 		68B42579217E243100C0E9C8 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B42578217E243100C0E9C8 /* ScanViewController.xib */; };
@@ -175,6 +175,7 @@
 		688829BA2119260A001E9FA2 /* IntrinsicSizeWithInsetsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicSizeWithInsetsButton.swift; sourceTree = "<group>"; };
 		688829BC211CADCA001E9FA2 /* PeripheralModulesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralModulesTableViewCell.swift; sourceTree = "<group>"; };
 		688829BE211CBA3F001E9FA2 /* StyleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConfig.swift; sourceTree = "<group>"; };
+		6895FB7521866C3B0084B063 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		6898A16A2118ED4500918824 /* ModeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeTabViewController.swift; sourceTree = "<group>"; };
 		6898A16C211922BD00918824 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
 		68B42578217E243100C0E9C8 /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 		6816E5022114FB0300BD3FD0 /* Evolution Devices BT */ = {
 			isa = PBXGroup;
 			children = (
+				6895FB7421866C270084B063 /* Model */,
 				682A46BF2121F54300ACC288 /* Resources */,
 				688829B721192585001E9FA2 /* Style */,
 				6816E54821150BBC00BD3FD0 /* Common */,
@@ -306,7 +308,6 @@
 				682D0A562118BD6E002B0B4A /* EmptyDetailsViewController.swift */,
 				68FB5D52217F73B5009DE125 /* DeviceTableViewCell.swift */,
 				68B4257A217EC29100C0E9C8 /* ScanViewController.swift */,
-				68F970402184455A006E14B7 /* ModelController.swift */,
 				6828630A217D873F00B56168 /* DashboardViewController.swift */,
 				683F6F092124D45100554CB8 /* HelpViewController.swift */,
 			);
@@ -491,6 +492,15 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		6895FB7421866C270084B063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68F970402184455A006E14B7 /* ModelController.swift */,
+				6895FB7521866C3B0084B063 /* State.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6898A1692118ED2300918824 /* ModeTabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,7 +602,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Miguel A Velasquez";
 				TargetAttributes = {
 					6816E4FF2114FB0300BD3FD0 = {
@@ -767,6 +777,7 @@
 				682D0A572118BD6E002B0B4A /* EmptyDetailsViewController.swift in Sources */,
 				683F6EEF2124BF0300554CB8 /* ReleasesParser.swift in Sources */,
 				68B4257B217EC29100C0E9C8 /* ScanViewController.swift in Sources */,
+				6895FB7621866C3B0084B063 /* State.swift in Sources */,
 				683F6F0C2124D4C700554CB8 /* DataFormatter.swift in Sources */,
 				680292912115116D007960DC /* UartPacketManager.swift in Sources */,
 				683F6F062124D26000554CB8 /* ControllerComponentsTableViewCell.swift in Sources */,
@@ -814,7 +825,6 @@
 				681A08E521152452007ED9F8 /* LocalizationManager.swift in Sources */,
 				6816E53B2115045000BD3FD0 /* ScannerViewController.swift in Sources */,
 				6828630B217D873F00B56168 /* DashboardViewController.swift in Sources */,
-				6816E5352114FF0A00BD3FD0 /* Config.swift in Sources */,
 				688829BB2119260A001E9FA2 /* IntrinsicSizeWithInsetsButton.swift in Sources */,
 				683F6F0E2126522800554CB8 /* StyleBelt.swift in Sources */,
 				6802928F21151158007960DC /* UartLogManager.swift in Sources */,
@@ -1006,13 +1016,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV29Q4KBL3;
+				DEVELOPMENT_TEAM = S7S8CA947X;
 				INFOPLIST_FILE = "Evolution Devices BT/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Evolution-Devices-BT";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Evolution-Devices-BT-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1025,13 +1035,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV29Q4KBL3;
+				DEVELOPMENT_TEAM = S7S8CA947X;
 				INFOPLIST_FILE = "Evolution Devices BT/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Evolution-Devices-BT";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Evolution-Devices-BT-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

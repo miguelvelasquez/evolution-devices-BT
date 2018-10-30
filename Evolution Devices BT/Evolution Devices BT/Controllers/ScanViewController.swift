@@ -36,7 +36,11 @@ class ScanViewController: UIViewController {
         super.viewDidLoad()
         baseTableView.register(UINib(nibName: "DeviceTableViewCell", bundle: nil), forCellReuseIdentifier: "peripheralCell")
 
-        imageView.image = UIImage(named: "device_unconnected")
+        if modelController.appState.isConnected() {
+            showConnected()
+        } else {
+            showDisconnected()
+        }
         
         // Init
         peripheralList = PeripheralList()                  // Initialize here to wait for Preferences.registerDefaults to be executed
@@ -80,6 +84,15 @@ class ScanViewController: UIViewController {
         
         // Update UI
         updateScannedPeripherals()
+    }
+    
+    func showConnected() {
+        imageView.image = UIImage(named: "device_connection")
+
+    }
+    
+    func showDisconnected() {
+        imageView.image = UIImage(named: "device_unconnected")
     }
     
     // MARK: - Connections

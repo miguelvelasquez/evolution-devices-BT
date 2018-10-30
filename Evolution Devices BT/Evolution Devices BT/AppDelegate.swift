@@ -17,9 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let dashboardViewController = window?.rootViewController as? DashboardViewController {
-            dashboardViewController.modelController = ModelController()
-        }
+        DLog("DAWG")
+//        if let dashboardViewController = window?.rootViewController as? DashboardViewController {
+//            DLog("WHAT IS YOU DOIN")
+//            dashboardViewController.modelController = ModelController()
+//        }
+        let navigationController = window?.rootViewController as! UINavigationController
+//        let dashboardViewController = navigationController.viewControllers[0] as! DashboardViewController
+//        dashboardViewController.modelController = ModelController()
+
+        
         
         // Customize default button appearance
         let db = DefaultButton.appearance()

@@ -40,6 +40,8 @@ class DashboardViewController: UIViewController {
         DLog("BRUHHHHHH")
         // Prepare the popup
         let scanVC = ScanViewController(nibName: "ScanViewController", bundle: nil)
+        scanVC.modelController = self.modelController
+
         
         // Create the dialog
         let popup = PopupDialog(viewController: scanVC,
@@ -52,17 +54,11 @@ class DashboardViewController: UIViewController {
         }
         
         // Create first button
-        let buttonOne = CancelButton(title: "CANCEL") {
+        let buttonOne = CancelButton(title: "CLOSE") {
         }
         
         // Create second button
         let buttonTwo = DefaultButton(title: "SCAN", dismissOnTap: false) {
-            scanVC.modelController = self.modelController
-            scanVC.imageView.image = UIImage(named: "device_connection")
-            self.plotterImage.alpha = 0.8
-            self.controllerImage.alpha = 0.8
-            self.buttonImageView.image = UIImage(named: "device_connection")
-            self.buttonText.text = "Connected"
             scanVC.scanPeripherals()
         }
         
@@ -76,12 +72,25 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if modelController.appState.isConnected() {
-            buttonImageView.image = UIImage(named: "device_connection")
-            buttonText.text = "Connected"
+            showConnected()
         } else {
-            buttonImageView.image = UIImage(named: "device_unconnected")
-            buttonText.text = "Not Connected"
+            showDisconnected()
         }
+    }
+    
+    func showConnected() {
+        buttonImageView.image = UIImage(named: "device_connection")
+        buttonText.text = "Connected"
+        self.plotterImage.alpha = 0.8
+        self.controllerImage.alpha = 0.8
+    }
+    
+    func showDisconnected() {
+        buttonImageView.image = UIImage(named: "device_unconnected")
+        buttonText.text = "Not Connected"
+        self.plotterImage.alpha = 0.5
+        self.controllerImage.alpha = 0.5
+        
     }
     
     override func didReceiveMemoryWarning() {

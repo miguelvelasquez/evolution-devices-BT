@@ -129,6 +129,7 @@ extension BlePeripheral {
         guard let data = data else { completion?(nil); return }
         
         guard let uartTxCharacteristic = uartTxCharacteristic, let uartTxCharacteristicWriteType = uartTxCharacteristicWriteType else {
+            DLog("Uart send data failed")
             DLog("Command Error: characteristic no longer valid")
             completion?(PeripheralUartError.invalidCharacteristic)
             return

@@ -41,7 +41,10 @@ class ControllerModeViewController: PeripheralModeViewController {
         // Init
         assert(blePeripheral != nil)
         controllerData = ControllerModuleManager(blePeripheral: blePeripheral!, delegate: self)
-                
+        DLog("CHECKING UART STATUS")
+        if let enabled = blePeripheral?.isUartEnabled() {
+            DLog(String(enabled))
+        }
         // UI
         uartView.layer.cornerRadius = 4
         uartView.layer.masksToBounds = true
@@ -60,6 +63,19 @@ class ControllerModeViewController: PeripheralModeViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if isMovingToParent {       // To keep streaming data when pushing a child view
+            controllerData.start(pollInterval: ControllerModeViewController.kPollInterval) { [unowned self] in
+            }
+
+        } else {
+            // Disable cache if coming back from Control Pad
+            controllerData.isUartRxCacheEnabled = false
+        }
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -74,6 +90,9 @@ class ControllerModeViewController: PeripheralModeViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        if isMovingFromParent {     // To keep streaming data when pushing a child view
+            controllerData.stop()
+        }
     }
     
     
@@ -139,8 +158,10 @@ class ControllerModeViewController: PeripheralModeViewController {
     }
     
     private func sendTouchEvent(tag: Int, isPressed: Bool) {
-        if let delegate = delegate {
-            delegate.onSendControllerPadButtonStatus(tag: tag, isPressed: isPressed)
+        DLog("TOUCH EVENT BOIII")
+        let message = "!B\(tag)\(isPressed ? "1" : "0")"
+        if let data = message.data(using: String.Encoding.utf8) {
+            controllerData.sendCrcData(data)
         }
     }
     
@@ -164,12 +185,12 @@ class ControllerModeViewController: PeripheralModeViewController {
     
 }
 
-//// MARK: - ControllerPadViewControllerDelegate
-//extension ControllerModeViewController: ControllerPadViewControllerDelegate {
-//    func onSendControllerPadButtonStatus(tag: Int, isPressed: Bool) {
-//        sendTouchEvent(tag: tag, isPressed: isPressed)
-//    }
-//}
+// MARK: - ControllerPadViewControllerDelegate
+extension ControllerModeViewController: ControllerPadViewControllerDelegate {
+    func onSendControllerPadButtonStatus(tag: Int, isPressed: Bool) {
+        sendTouchEvent(tag: tag, isPressed: isPressed)
+    }
+}
 
 // MARK: - UITableViewDataSource
 extension ControllerModeViewController : UITableViewDataSource {
