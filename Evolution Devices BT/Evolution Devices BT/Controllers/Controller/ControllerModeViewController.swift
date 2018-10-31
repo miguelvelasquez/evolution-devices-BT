@@ -118,7 +118,7 @@ class ControllerModeViewController: PeripheralModeViewController {
         //        let hightlightedImage = UIImage(color: UIColor.darkGray)
         //        button.setBackgroundImage(hightlightedImage, for: .highlighted)
         
-        button.addTarget(self, action: #selector(onTouchDown(_:)), for: .touchDown)
+//        button.addTarget(self, action: #selector(onTouchDown(_:)), for: .touchDown)
         button.addTarget(self, action: #selector(onTouchUp(_:)), for: .touchUpInside)
         button.addTarget(self, action: #selector(onTouchUp(_:)), for: .touchDragExit)
         button.addTarget(self, action: #selector(onTouchUp(_:)), for: .touchCancel)
@@ -147,10 +147,10 @@ class ControllerModeViewController: PeripheralModeViewController {
     }
     
     // MARK: - Actions
-    @objc func onTouchDown(_ sender: UIButton) {
-        DLog("Pressed button DOWN")
-        sendTouchEvent(tag: sender.tag, isPressed: true)
-    }
+//    @objc func onTouchDown(_ sender: UIButton) {
+//        DLog("Pressed button DOWN")
+//        sendTouchEvent(tag: sender.tag, isPressed: true)
+//    }
     
     @objc func onTouchUp(_ sender: UIButton) {
         DLog("Pressed button UP")
@@ -280,6 +280,7 @@ extension ControllerModeViewController: ControllerModuleManagerDelegate {
     func reloadData() {
         // Refresh the controllerPadViewController uart text
         setUartText(self.controllerData.uartTextBuffer())
+        
         
     }
 }
