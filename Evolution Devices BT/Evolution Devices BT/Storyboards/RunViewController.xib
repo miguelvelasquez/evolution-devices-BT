@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RunViewController" customModule="Evolution_Devices_BT" customModuleProvider="target">
+            <connections>
+                <outlet property="stopwatchLabel" destination="0aH-T2-TkE" id="3Hf-6H-Oeb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Thh-IU-ups" customClass="RunViewController" customModule="Evolution_Devices_BT" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="Lx5-7s-Aeo">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUb-aD-rEW">
+                        <rect key="frame" x="16" y="342" width="174" height="198"/>
+                        <color key="backgroundColor" red="0.38823529410000002" green="0.78039215689999997" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Start Run">
+                            <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="startButtonPressed:" destination="Thh-IU-ups" eventType="touchUpInside" id="Qf9-SN-vyB"/>
+                        </connections>
+                    </button>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-Z3-jaz">
+                        <rect key="frame" x="16" y="535" width="343" height="112"/>
+                        <color key="backgroundColor" red="0.84777593610000002" green="0.35460351289999997" blue="0.28211672609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="112" id="msx-RW-WBs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Stop Run">
+                            <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="stopButtonPressed:" destination="Thh-IU-ups" eventType="touchUpInside" id="CZy-ah-Trm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aH-T2-TkE">
+                        <rect key="frame" x="16" y="202" width="343" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="8FU-yN-los"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLN-Dv-NCU">
+                        <rect key="frame" x="188" y="342" width="171" height="198"/>
+                        <color key="backgroundColor" red="0.89901620370000002" green="0.64223616510000003" blue="0.10792324640000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Pause">
+                            <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="pauseButtonPressed:" destination="Thh-IU-ups" eventType="touchUpInside" id="yqV-9h-jiq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="NUb-aD-rEW" firstAttribute="top" secondItem="KLN-Dv-NCU" secondAttribute="top" id="8ud-53-q6S"/>
+                    <constraint firstItem="0aH-T2-TkE" firstAttribute="trailing" secondItem="KLN-Dv-NCU" secondAttribute="trailing" id="CVU-0u-hdR"/>
+                    <constraint firstItem="0aH-T2-TkE" firstAttribute="leading" secondItem="NUb-aD-rEW" secondAttribute="leading" id="DY2-GJ-D4D"/>
+                    <constraint firstItem="KLN-Dv-NCU" firstAttribute="leading" secondItem="ggA-hV-kxP" secondAttribute="leading" constant="188" id="HdV-kh-89b"/>
+                    <constraint firstItem="0aH-T2-TkE" firstAttribute="trailing" secondItem="Lx5-7s-Aeo" secondAttribute="trailingMargin" id="IIZ-fH-wBU"/>
+                    <constraint firstItem="NUb-aD-rEW" firstAttribute="leading" secondItem="gpu-Z3-jaz" secondAttribute="leading" id="Vsq-H5-Gua"/>
+                    <constraint firstItem="0aH-T2-TkE" firstAttribute="leading" secondItem="Lx5-7s-Aeo" secondAttribute="leadingMargin" id="atc-DR-HzB"/>
+                    <constraint firstItem="0aH-T2-TkE" firstAttribute="top" secondItem="ggA-hV-kxP" secondAttribute="top" constant="182" id="byc-bf-pNg"/>
+                    <constraint firstItem="ggA-hV-kxP" firstAttribute="bottom" secondItem="NUb-aD-rEW" secondAttribute="bottom" constant="127" id="eMY-Ek-32N"/>
+                    <constraint firstAttribute="bottom" secondItem="gpu-Z3-jaz" secondAttribute="bottom" constant="20" symbolic="YES" id="hug-AG-q6f"/>
+                    <constraint firstItem="NUb-aD-rEW" firstAttribute="top" secondItem="0aH-T2-TkE" secondAttribute="bottom" constant="40" id="kWr-hf-ejJ"/>
+                    <constraint firstItem="KLN-Dv-NCU" firstAttribute="trailing" secondItem="gpu-Z3-jaz" secondAttribute="trailing" id="op7-tm-Piu"/>
+                    <constraint firstItem="ggA-hV-kxP" firstAttribute="trailing" secondItem="NUb-aD-rEW" secondAttribute="trailing" constant="185" id="ryP-JS-Wqv"/>
+                    <constraint firstItem="NUb-aD-rEW" firstAttribute="baseline" secondItem="KLN-Dv-NCU" secondAttribute="firstBaseline" id="xxl-5p-tik"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="ggA-hV-kxP"/>
+            </view>
+            <connections>
+                <outlet property="stopwatchLabel" destination="0aH-T2-TkE" id="TGC-kE-X7N"/>
+            </connections>
+            <point key="canvasLocation" x="821.60000000000002" y="166.8665667166417"/>
+        </viewController>
+    </objects>
+</document>

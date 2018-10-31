@@ -26,6 +26,7 @@ DEPENDENCIES:
   - iOSDFULibrary (~> 4.1.2)
   - MSWeakTimer (~> 1.1.0)
   - PopupDialog (~> 0.9)
+  - SwiftyTimer
   - SwiftyXML (~> 1.6.0)
   - "UIColor+Hex (~> 1.0.1)"
 
@@ -56,6 +57,6 @@ SPEC CHECKSUMS:
   "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
-PODFILE CHECKSUM: feb8c00271ba05a957be01440c8d870319afa769
+PODFILE CHECKSUM: 2122a74dd2ec3309240247f9a03306480812b879
 
 COCOAPODS: 1.5.3

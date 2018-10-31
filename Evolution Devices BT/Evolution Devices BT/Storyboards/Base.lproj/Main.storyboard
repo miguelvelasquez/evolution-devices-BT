@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-rD-Mgx" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="100" width="343" height="467"/>
+                                <rect key="frame" x="16" y="100" width="343" height="278"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-wK-hr4">
-                                <rect key="frame" x="16" y="577" width="119" height="31"/>
+                                <rect key="frame" x="16" y="386" width="119" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="AutoScroll: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loR-98-bE0">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
@@ -41,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwe-E6-KDe">
-                                <rect key="frame" x="155" y="577.5" width="204" height="30"/>
+                                <rect key="frame" x="155" y="386" width="204" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Width: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-CE-fkB">
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="30"/>
@@ -60,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20874811460000001" green="0.20874811460000001" blue="0.20874811460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ebe-wK-hr4" firstAttribute="top" secondItem="Zgn-rD-Mgx" secondAttribute="bottom" constant="10" id="2M1-D2-n4b"/>
+                            <constraint firstItem="Ebe-wK-hr4" firstAttribute="top" secondItem="Zgn-rD-Mgx" secondAttribute="bottom" constant="8" id="2M1-D2-n4b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hwe-E6-KDe" secondAttribute="trailing" id="AUk-S7-nuY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zgn-rD-Mgx" secondAttribute="trailing" id="HTr-FZ-kBH"/>
                             <constraint firstItem="Zgn-rD-Mgx" firstAttribute="top" secondItem="Iwr-R9-Lve" secondAttribute="top" constant="36" id="Idu-cp-CI5"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="Zgn-rD-Mgx" firstAttribute="leading" secondItem="z6D-7e-Kld" secondAttribute="leadingMargin" id="ZmT-hM-uCQ"/>
                             <constraint firstItem="Hwe-E6-KDe" firstAttribute="leading" secondItem="Ebe-wK-hr4" secondAttribute="trailing" constant="20" id="rla-OR-SgZ"/>
                             <constraint firstItem="Hwe-E6-KDe" firstAttribute="centerY" secondItem="Ebe-wK-hr4" secondAttribute="centerY" id="u2q-QE-eMR"/>
-                            <constraint firstItem="Iwr-R9-Lve" firstAttribute="bottom" secondItem="Ebe-wK-hr4" secondAttribute="bottom" constant="10" id="zZG-G5-3bu"/>
+                            <constraint firstItem="Iwr-R9-Lve" firstAttribute="bottom" secondItem="Ebe-wK-hr4" secondAttribute="bottom" constant="201" id="zZG-G5-3bu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Iwr-R9-Lve"/>
                     </view>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWK-Xq-aY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="-1033"/>
+            <point key="canvasLocation" x="1221.5999999999999" y="-1033.1334332833585"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c42-GK-H2e">
