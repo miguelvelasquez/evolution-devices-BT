@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		036338892189805D0003C48E /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036338882189805D0003C48E /* RunViewController.swift */; };
+		0363388B218A82E50003C48E /* RunModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0363388A218A82E50003C48E /* RunModuleManager.swift */; };
 		039FBF8121896D95007B3A88 /* RunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039FBF8021896D94007B3A88 /* RunViewController.xib */; };
 		3FE4D2A49332C2C8594634C7 /* Pods_Evolution_Devices_BT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884D9A705F7CE1B34D2D5AF4 /* Pods_Evolution_Devices_BT.framework */; };
 		68029289211510E7007960DC /* BlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68029288211510E7007960DC /* BlePeripheral.swift */; };
@@ -104,6 +105,7 @@
 
 /* Begin PBXFileReference section */
 		036338882189805D0003C48E /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		0363388A218A82E50003C48E /* RunModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RunModuleManager.swift; path = "Evolution Devices BT/Common/Modules/RunModuleManager.swift"; sourceTree = SOURCE_ROOT; };
 		039FBF8021896D94007B3A88 /* RunViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunViewController.xib; sourceTree = "<group>"; };
 		04E3FBAB251108CA724D7FC3 /* Pods_Evolution_Devices_BTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Evolution_Devices_BTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4964248358943BFDC30B85 /* Pods-Evolution Devices BT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Evolution Devices BT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Evolution Devices BT/Pods-Evolution Devices BT.debug.xcconfig"; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				036338882189805D0003C48E /* RunViewController.swift */,
+				0363388A218A82E50003C48E /* RunModuleManager.swift */,
 				683F6EFE2124D1C500554CB8 /* Controller */,
 				6898A1692118ED2300918824 /* ModeTabs */,
 				682D0A5F2118C741002B0B4A /* Plotter */,
@@ -786,6 +789,7 @@
 				68B4257B217EC29100C0E9C8 /* ScanViewController.swift in Sources */,
 				6895FB7621866C3B0084B063 /* State.swift in Sources */,
 				683F6F0C2124D4C700554CB8 /* DataFormatter.swift in Sources */,
+				0363388B218A82E50003C48E /* RunModuleManager.swift in Sources */,
 				680292912115116D007960DC /* UartPacketManager.swift in Sources */,
 				683F6F062124D26000554CB8 /* ControllerComponentsTableViewCell.swift in Sources */,
 				687BFB90212363DD00D08F05 /* ScrollingTabBarCollectionViewCell.swift in Sources */,

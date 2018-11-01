@@ -22,6 +22,12 @@ Please reset bluetooth and try again.";
 "main_tabbar_centralmode" = "Central Mode";
 "main_tabbar_peripheralmode" = "Peripheral Mode";
 
+// Run Controller
+"run_title" = "Start Run"
+"run_tab_title" = "Start Run";
+"run_navigation_title_format" = "Start Run - %@";
+
+
 
 // Scanner
 "scanner_title" = "Peripherals";

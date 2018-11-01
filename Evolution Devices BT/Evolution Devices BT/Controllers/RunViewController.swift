@@ -11,38 +11,66 @@ import UIKit
 
 // MARK: Stopwatch
 // Properties
-class RunViewController: UIViewController {
+class RunViewController: PeripheralModeViewController {
     
-@IBOutlet weak var stopwatchLabel: UILabel!
-var stopwatch: LabelStopwatch!
-
-
-override func viewDidLoad() {
-    super.viewDidLoad()
+        @IBOutlet weak var stopwatchLabel: UILabel!
+        var stopwatch: LabelStopwatch!
     
-    // Create the stopwatch with the stopwatchLabel
-    stopwatch = LabelStopwatch(label: stopwatchLabel)
-}
+        weak var delegate: RunModuleManagerDelegate?
+        fileprivate var runData: RunModuleManager!
+        fileprivate var contentItems = [Int]()
+    
 
-override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-}
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let localizationManager = LocalizationManager.shared
+        let name = blePeripheral?.name ?? LocalizationManager.shared.localizedString("scanner_unnamed")
+        self.title = traitCollection.horizontalSizeClass == .regular ? String(format: localizationManager.localizedString("run_navigation_title_format"), arguments: [name]) : localizationManager.localizedString("run_tab_title")
+        
+        // Init
+        assert(blePeripheral != nil)
+        runData = RunModuleManager(blePeripheral: blePeripheral!, delegate: self)
+        DLog("CHECKING UART STATUS")
+        if let enabled = blePeripheral?.isUartEnabled() {
+            DLog(String(enabled))
+        }
+        // UI
+    //    uartView.layer.cornerRadius = 4
+    //    uartView.layer.masksToBounds = true
+        // Create the stopwatch with the stopwatchLabel
+        stopwatch = LabelStopwatch(label: stopwatchLabel)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
 
-// Start button action
-@IBAction func startButtonPressed(_ sender: UIButton) {
-    stopwatch.start()
-}
+    // Start button action
+    @IBAction func startButtonPressed(_ sender: UIButton) {
+        stopwatch.start()
+    }
 
-// Pause button action
-@IBAction func pauseButtonPressed(_ sender: UIButton) {
-    stopwatch.pause()
-}
+    // Pause button action
+    @IBAction func pauseButtonPressed(_ sender: UIButton) {
+        stopwatch.pause()
+    }
 
-// Stop button pressed
-@IBAction func stopButtonPressed(_ sender: UIButton) {
-    stopwatch.stop()
-}
+    // Stop button pressed
+    @IBAction func stopButtonPressed(_ sender: UIButton) {
+        stopwatch.stop()
+    }
+    @objc func onTouchUp(_ sender: UIButton) {
+        DLog("Pressed button UP")
+        sendTouchEvent(tag: sender.tag, isPressed: false)
+    }
+    
+    private func sendTouchEvent(tag: Int, isPressed: Bool) {
+        let message = "!B\(tag)\(isPressed ? "1" : "0")"
+        if let data = message.data(using: String.Encoding.utf8) {
+            runData.sendCrcData(data)
+        }
+    }
 }
 class Stopwatch: NSObject {
     
@@ -210,7 +238,39 @@ class Stopwatch: NSObject {
     
 }
 
-
+// MARK: - ControllerModuleManagerDelegate
+extension RunViewController: RunModuleManagerDelegate {
+    func onRunUartIsReady(error: Error?) {
+        DispatchQueue.main.async {
+            guard error == nil else {
+                DLog("Error initializing uart")
+                self.dismiss(animated: true, completion: { [weak self] in
+                    guard let context = self else { return }
+                    let localizationManager = LocalizationManager.shared
+                    showErrorAlert(from: context, title: localizationManager.localizedString("dialog_error"), message: localizationManager.localizedString("uart_error_peripheralinit"))
+                    
+                    if let blePeripheral = context.blePeripheral {
+                        BleManager.shared.disconnect(from: blePeripheral)
+                    }
+                })
+                return
+            }
+        }
+    }
+    func onUarRX() {
+        // Uart data recevied
+        
+        
+        //        self.enh_throttledReloadData()      // it will call self.reloadData without overloading the main thread with calls
+    }
+    
+    func reloadData() {
+        // Refresh the controllerPadViewController uart text
+//        setUartText(self.controllerData.uartTextBuffer())
+        
+        
+    }
+}
 // MARK: LabelStopwatch
 /**
  * Subclass of Stopwatch
