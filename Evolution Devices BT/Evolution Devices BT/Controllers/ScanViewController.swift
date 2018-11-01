@@ -103,7 +103,6 @@ class ScanViewController: UIViewController {
         BleManager.shared.connect(to: peripheral)
         modelController.appState.setConnected(peripheral: peripheral)
         reloadBaseTable()
-        
     }
     
     fileprivate func disconnect(peripheral: BlePeripheral) {
@@ -268,7 +267,6 @@ class ScanViewController: UIViewController {
             DLog("Connected to an unexpected peripheral")
             return
         }
-        
         // Discover services
         infoAlertController?.message = LocalizationManager.shared.localizedString("peripheraldetails_discoveringservices")
         discoverServices(peripheral: selectedPeripheral)
@@ -351,8 +349,6 @@ class ScanViewController: UIViewController {
                     return
                 }
                 
-                // Check updates if needed
-                context.infoAlertController?.message = localizationManager.localizedString("peripheraldetails_checkingupdates")
             }
         }
     }
@@ -399,17 +395,15 @@ extension ScanViewController: UITableViewDataSource {
         peripheralCell.deviceNameLabel.text = peripheral.name ?? localizationManager.localizedString("scanner_unnamed")
         peripheralCell.rssiImageView.image = RssiUI.signalImage(for: peripheral.rssi)
         
-        let isFullScreen = UIScreen.main.traitCollection.horizontalSizeClass == .compact
         
         let connected: Bool
-//        disconnected = isFullScreen || selectedPeripheral == nil
-        connected = !isFullScreen && peripheral.identifier == selectedPeripheral?.identifier
+        connected = peripheral.identifier == selectedPeripheral?.identifier || peripheral.identifier == modelController.appState.device?.identifier
         
         peripheralCell.connected = connected
         if connected {
-            peripheralCell.setButtonColorConnected()
+            peripheralCell.setConnected()
         } else {
-            peripheralCell.button.setTitle("Connect", for: .normal)
+            peripheralCell.setDisconnected()
         }
 //        peripheralCell.disconnectButton.isHidden = !connected
         
@@ -425,8 +419,6 @@ extension ScanViewController: UITableViewDataSource {
             } else {
                 DLog("YOU CLICKED CONNECT")
                 self.connect(peripheral: peripheral)
-                peripheralCell.connected = true
-                peripheralCell.button.setTitle("Disconnect", for: .normal)
             }
         }
         return peripheralCell

@@ -12,8 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanViewController" customModule="Evolution_Devices_BT" customModuleProvider="target">
             <connections>
-                <outlet property="baseTableView" destination="g7e-hv-nsh" id="NOK-9u-X9w"/>
-                <outlet property="imageView" destination="FiT-bR-jmy" id="z5b-ms-UcP"/>
+                <outlet property="baseTableView" destination="g7e-hv-nsh" id="kXU-EQ-M8C"/>
+                <outlet property="imageView" destination="FiT-bR-jmy" id="zvR-b2-jVA"/>
                 <outlet property="view" destination="uzH-va-8uD" id="4Pe-0x-jqY"/>
             </connections>
         </placeholder>

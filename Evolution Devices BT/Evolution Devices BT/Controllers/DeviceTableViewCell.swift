@@ -24,8 +24,21 @@ class DeviceTableViewCell: UITableViewCell {
     var onClick: (() -> Void)?
     var connected: Bool?
     
+    func setConnected() {
+        connected = true
+        button.setTitle("Disconnect", for: .normal)
+        setButtonColorConnected()
+    }
+    
+    func setDisconnected() {
+        connected = false
+        button.setTitle("Connect", for: .normal)
+        setButtonColorDisconnected()
+    }
+    
     // UI
     func setButtonColorConnected() {
+        
         button.borderColor = UIColor(hexString: "#1793FE")
         button.setTitleColor(UIColor(hexString: "#ffffff"), for: .normal)
         button.backgroundColor = UIColor(hexString: "#1793FE")

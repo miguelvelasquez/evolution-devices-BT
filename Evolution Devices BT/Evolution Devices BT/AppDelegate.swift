@@ -17,14 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        DLog("DAWG")
-//        if let dashboardViewController = window?.rootViewController as? DashboardViewController {
-//            DLog("WHAT IS YOU DOIN")
-//            dashboardViewController.modelController = ModelController()
-//        }
         let navigationController = window?.rootViewController as! UINavigationController
-//        let dashboardViewController = navigationController.viewControllers[0] as! DashboardViewController
-//        dashboardViewController.modelController = ModelController()
+        let dashboardViewController = navigationController.viewControllers[0] as! DashboardViewController
+        dashboardViewController.modelController = ModelController()
 
         
         

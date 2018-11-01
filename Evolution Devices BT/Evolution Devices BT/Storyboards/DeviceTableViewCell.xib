@@ -38,10 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fg-oz-I6D">
-                                <rect key="frame" x="186" y="7.5" width="52" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="8fg-oz-I6D" secondAttribute="height" multiplier="13:7" id="WyP-Ac-mLd"/>
-                                </constraints>
+                                <rect key="frame" x="186" y="3" width="52" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Connect"/>
                                 <userDefinedRuntimeAttributes>
@@ -73,6 +70,7 @@
                             <constraint firstItem="vc5-38-xKV" firstAttribute="top" secondItem="ukC-sd-huB" secondAttribute="top" constant="11" id="FEU-f6-Bn4"/>
                             <constraint firstItem="aEc-F5-AfS" firstAttribute="leading" secondItem="vc5-38-xKV" secondAttribute="trailing" constant="8" id="LkE-zn-1u4"/>
                             <constraint firstItem="8fg-oz-I6D" firstAttribute="centerY" secondItem="ukC-sd-huB" secondAttribute="centerY" id="RkA-5F-GLa"/>
+                            <constraint firstItem="8fg-oz-I6D" firstAttribute="top" secondItem="ukC-sd-huB" secondAttribute="top" constant="3" id="Y7X-NF-4AZ"/>
                             <constraint firstItem="aEc-F5-AfS" firstAttribute="centerY" secondItem="ukC-sd-huB" secondAttribute="centerY" id="i4t-yl-ozB"/>
                             <constraint firstItem="8fg-oz-I6D" firstAttribute="leading" secondItem="aEc-F5-AfS" secondAttribute="trailing" constant="8" id="kEA-6L-wef"/>
                             <constraint firstAttribute="trailing" secondItem="8fg-oz-I6D" secondAttribute="trailing" constant="5" id="tdM-mP-LcP"/>

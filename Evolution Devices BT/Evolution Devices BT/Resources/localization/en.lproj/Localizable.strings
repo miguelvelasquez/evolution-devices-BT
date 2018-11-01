@@ -22,12 +22,6 @@ Please reset bluetooth and try again.";
 "main_tabbar_centralmode" = "Central Mode";
 "main_tabbar_peripheralmode" = "Peripheral Mode";
 
-// Run Controller
-"run_title" = "Start Run"
-"run_tab_title" = "Start Run";
-"run_navigation_title_format" = "Start Run - %@";
-
-
 
 // Scanner
 "scanner_title" = "Peripherals";
@@ -272,14 +266,14 @@ Please reset bluetooth and try again.";
 "mqtt_connection_failed" = "Mqtt connection to server lost";
 
 // Plotter
-"plotter_tab_title" = "Metrics";
-"plotter_navigation_title_format" = "Metrics - %@";
+"plotter_tab_title" = "Plotter";
+"plotter_navigation_title_format" = "Plotter - %@";
 "plotter_autoscroll" = "AutoScroll:";
 "plotter_width" = "Width:";
 "plotter_nodata" = "No chart data available";
 
-"plotter_help_title" = "Metrics";
-"plotter_help_text" = "• The 'Metrics' utility plots metrics about your running cycle. We plot the running percentage in real-time, as well as some useful gait metrics.
+"plotter_help_title" = "Plotter";
+"plotter_help_text" = "• The 'Plotter' utility can be used to plot incoming numeric data in a chart, without having to create a custom plotter code or application. It behaves similarly to the Serial Plotter in recent versions of the Arduino IDE.
 
 •  To plot one or more data streams to the plotter, send your numeric data in CSV format with one of the following seperators:
 ',' - Comma (0x2C)
@@ -392,8 +386,8 @@ PWM - set a pin's pulse width  output
 • Once finished setting a pin's mode or state, you can close it by tapping the empty space near it's top - or by selecting another row.";
 
 // Controller
-"controller_tab_title" = "Calibration";
-"controller_navigation_title_format" = "Calibration - %@";
+"controller_tab_title" = "Controller";
+"controller_navigation_title_format" = "Controller - %@";
 
 "controller_uartwarning" = "Please ensure that your Bluefruit LE module is set to DATA/UART mode when using this module";
 
@@ -424,8 +418,23 @@ PWM - set a pin's pulse width  output
 "controller_module_pad" = "Control Pad";
 "controller_module_colorpicker" = "Color Picker";
 
-"controller_help_title" = "Calibration";
-"controller_help_text" = "The Calibration module is designed to calibrate the intensity of stimulation for your device. Simply increase (+) or decrease (-) the intensity until it feels right for you.";
+"controller_help_title" = "Controller";
+"controller_help_text" = "The Controller module streams sensor data from your iOS device to Bluefruit LE over UART at a frequency of 10Hz.  Activation of a switch will begin sending relevant data.  Each packet sent begins with single byte char “!” (0x21) followed by a single byte char initial, and sensor data encoded as float values of 4 byte length
+
+• Quaternion sends iOS Device Motion data to describe device attitude.  This data is derived from Accelerometer, Gyro, and Magnetometer readings.
+Format: [ ‘!’ ] [ ‘Q’ ] [ float x ] [ float y ] [ float z ] [ float w ]
+
+• Accelerometer sends raw accelerometer data
+Format: [ ‘!’ ] [ ‘A’ ] [ float x ] [ float y ] [ float z ]
+
+• Gyro sends raw gyroscope data as:
+Format: [ ‘!’ ] [ ‘G’ ] [ float x ] [ float y ] [ float z ]
+
+• Magnetometer sends raw magnetometer data which is uncalibrated and does not account for interference from source device.
+Format: [ ‘!’ ] [ ‘M’ ] [ float x ] [ float y ] [ float z ]
+
+• Location sends GPS data and requires user permission before initial use.
+Format: [ ‘!’ ] [ ‘L’ ] [ float latitude ] [ float longitude ] [ float altitude ]";
 
 // Control Pad
 
