@@ -130,16 +130,20 @@ class PlotterModeViewController: PeripheralModeViewController {
     // MARK: - Line Chart
     fileprivate func setupChart() {
         chartView.delegate = self
-        chartView.backgroundColor = .white      // Fix for Charts 3.0.3 (overrides the default background color)
+        
+        chartView.backgroundColor = UIColor(red:0.25, green:0.25, blue:0.26, alpha:1.0)
+        chartView.gridBackgroundColor = UIColor(red:0.25, green:0.25, blue:0.26, alpha:1.0)
+        chartView.drawGridBackgroundEnabled = true
         
         chartView.chartDescription?.enabled = false
-        chartView.xAxis.granularityEnabled = true
-        chartView.xAxis.granularity = 5
+        chartView.xAxis.enabled = false
+        
         chartView.leftAxis.drawZeroLineEnabled = true
         chartView.setExtraOffsets(left: 10, top: 10, right: 10, bottom: 0)
         chartView.legend.enabled = false
         chartView.noDataText = LocalizationManager.shared.localizedString("plotter_nodata")
     }
+    
     
     fileprivate func addEntry(peripheralIdentifier identifier: UUID, index: Int, value: Double, timestamp: CFAbsoluteTime) {
         let entry = ChartDataEntry(x: timestamp, y: value)
