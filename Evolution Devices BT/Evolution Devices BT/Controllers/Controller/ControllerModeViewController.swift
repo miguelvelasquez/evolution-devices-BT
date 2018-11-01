@@ -27,6 +27,8 @@ class ControllerModeViewController: PeripheralModeViewController {
     @IBOutlet weak var uartTextView: UITextView!
     @IBOutlet weak var uartView: UIView!
     
+    @IBOutlet weak var runButton: UIButton!
+    @IBOutlet weak var doneButton: UIButton!
     // Data
     weak var delegate: ControllerModeViewControllerDelegate?
     fileprivate var controllerData: ControllerModuleManager!
@@ -64,6 +66,9 @@ class ControllerModeViewController: PeripheralModeViewController {
                 setupButton(button)
             }
         }
+        setupButton(runButton)
+        setupButton(doneButton)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

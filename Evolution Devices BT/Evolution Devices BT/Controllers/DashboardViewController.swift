@@ -12,7 +12,14 @@ import UIKit
 import MSWeakTimer
 
 
+protocol DashboardViewControllerDelegate: class {
+    func onSendControllerPadButtonStatus(tag: Int, isPressed: Bool)
+}
+
 class DashboardViewController: UIViewController {
+    
+    fileprivate static let kPollInterval = 0.25
+
     
     @IBOutlet weak var buttonImageView: UIImageView!
     @IBOutlet weak var buttonText: UILabel!
@@ -22,23 +29,25 @@ class DashboardViewController: UIViewController {
     
     @IBAction func pressedControllerButton(_ sender: UITapGestureRecognizer) {
         DLog("pressed controller")
-        checkConnected()
-        if let controllerViewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerModeViewController") as? ControllerModeViewController {
-            controllerViewController.modelController = self.modelController
-
-            show(controllerViewController, sender: self)
+        if checkConnected() {
+            if let controllerViewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerModeViewController") as? ControllerModeViewController {
+                controllerViewController.modelController = self.modelController
+//                sendTouchEvent(tag: 100, isPressed: false)
+                show(controllerViewController, sender: self)
+            }
         }
     }
     
     
     @IBAction func pressedPlotterButton(_ sender: UITapGestureRecognizer) {
         DLog("pressed plotter")
-        checkConnected()
-        if let plotterViewController = self.storyboard?.instantiateViewController(withIdentifier: "PlotterModeViewController") as? PlotterModeViewController {
-            plotterViewController.blePeripheral = blePeripheral
-            plotterViewController.modelController = self.modelController
-
-            show(plotterViewController, sender: self)
+        if checkConnected() {
+            if let plotterViewController = self.storyboard?.instantiateViewController(withIdentifier: "PlotterModeViewController") as? PlotterModeViewController {
+                plotterViewController.blePeripheral = blePeripheral
+                plotterViewController.modelController = self.modelController
+//                sendTouchEvent(tag: 101, isPressed: false)
+                show(plotterViewController, sender: self)
+            }
         }
     }
     
@@ -56,6 +65,11 @@ class DashboardViewController: UIViewController {
     
     fileprivate var batteryLevel: Int?
     weak var blePeripheral: BlePeripheral?
+    
+    // Data
+    weak var delegate: ControllerModeViewControllerDelegate?
+    fileprivate var controllerData: ControllerModuleManager!
+    fileprivate var contentItems = [Int]()
 
     /*!
      Displays the default dialog without image, just as the system dialog
@@ -115,18 +129,62 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+//        if let blePeripheral = modelController.appState.device {
+//            hasUart = blePeripheral.hasUart()
+//            self.controllerData = ControllerModuleManager(blePeripheral: blePeripheral, delegate: self as! ControllerModuleManagerDelegate)
+//        }
+    
         
-        if let blePeripheral = blePeripheral {
-            hasUart = blePeripheral.hasUart()
-        }
     }
+    
+    func setupUART() {
+        if modelController.appState.isConnected() {
+            self.controllerData = ControllerModuleManager(blePeripheral: blePeripheral!, delegate: self as! ControllerModuleManagerDelegate)
+        }
+        
+    }
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+//        if let blePeripheral = modelController.appState.device {
+//            hasUart = blePeripheral.hasUart()
+//            controllerData = ControllerModuleManager(blePeripheral: blePeripheral, delegate: self as! ControllerModuleManagerDelegate)
+//        }
+        
+        // UNCOMMENT when I know how to fix
+//        if modelController.appState.isConnected() {
+//            if isMovingToParent {       // To keep streaming data when pushing a child view
+//                controllerData.start(pollInterval: DashboardViewController.kPollInterval) { [unowned self] in
+//                }
+//
+//            } else {
+//                // Disable cache if coming back from Control Pad
+//                controllerData.isUartRxCacheEnabled = false
+//            }
+//        }
         
         // Schedule Rssi timer
         rssiRefreshTimer = MSWeakTimer.scheduledTimer(withTimeInterval: DashboardViewController.kRssiRefreshInterval, target: self, selector: #selector(rssiRefreshFired), userInfo: nil, repeats: true, dispatchQueue: .global(qos: .background))
+    }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        // Fix: remove the UINavigationController pop gesture to avoid problems with the arrows left button
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+//            self.navigationController?.interactivePopGestureRecognizer?.delaysTouchesBegan = false
+//            self.navigationController?.interactivePopGestureRecognizer?.delaysTouchesEnded = false
+//            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+//        }
+//    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+//        if isMovingFromParent {     // To keep streaming data when pushing a child view
+//            controllerData.stop()
+//        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -137,19 +195,38 @@ class DashboardViewController: UIViewController {
         rssiRefreshTimer = nil
     }
     
+//    @objc func onTouchUp(_ sender: UIButton) {
+//        DLog("Pressed button UP")
+//        sendTouchEvent(tag: sender.tag, isPressed: false)
+//    }
+    
+    private func sendTouchEvent(tag: Int, isPressed: Bool) {
+        let message = "!B\(tag)\(isPressed ? "1" : "0")"
+        if let data = message.data(using: String.Encoding.utf8) {
+            controllerData.sendCrcData(data)
+            DLog("data sent!")
+        }
+    }
+    
+    fileprivate let kDetailItemOffset = 100
+
+    
     // MARK: - UI
     @objc private func rssiRefreshFired() {
         blePeripheral?.readRssi()
     }
     
-    func checkConnected() {
+    func checkConnected() -> Bool {
         if !modelController.appState.isConnected() {
             showNotConnectedDialog()
+            return false
         }
+        return true
     }
     
     func updateUI() {
         if modelController.appState.isConnected() {
+//            setupUART()
             showConnected()
         } else {
             showDisconnected()
