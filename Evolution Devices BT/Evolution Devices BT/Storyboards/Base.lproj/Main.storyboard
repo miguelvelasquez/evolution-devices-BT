@@ -693,7 +693,7 @@
                                     <constraint firstItem="R7z-vV-lZg" firstAttribute="leading" secondItem="HE2-O2-qmB" secondAttribute="leading" id="zZV-dt-WCx"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9j-lm-gcY">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9j-lm-gcY">
                                 <rect key="frame" x="62" y="495" width="80.5" height="80.5"/>
                                 <color key="backgroundColor" red="0.098798230289999997" green="0.49231177570000001" blue="0.97380113599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
@@ -701,7 +701,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgv-ed-LQR">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgv-ed-LQR">
                                 <rect key="frame" x="237" y="495" width="80.5" height="80.5"/>
                                 <color key="backgroundColor" red="0.098798230289999997" green="0.49231177570000001" blue="0.97380113599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
