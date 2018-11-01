@@ -17,6 +17,9 @@ class ControllerModeViewController: PeripheralModeViewController {
     // Constants
     fileprivate static let kPollInterval = 0.25
     
+    // State Control
+    var modelController: ModelController!
+
 
     // UI
     @IBOutlet weak var directionsView: UIView!
@@ -36,8 +39,8 @@ class ControllerModeViewController: PeripheralModeViewController {
         // Title
         let localizationManager = LocalizationManager.shared
         let name = blePeripheral?.name ?? LocalizationManager.shared.localizedString("scanner_unnamed")
-        self.title = traitCollection.horizontalSizeClass == .regular ? String(format: localizationManager.localizedString("controller_navigation_title_format"), arguments: [name]) : localizationManager.localizedString("controller_tab_title")
-        
+//        self.title = traitCollection.horizontalSizeClass == .regular ? String(format: localizationManager.localizedString("controller_navigation_title_format"), arguments: [name]) : localizationManager.localizedString("controller_tab_title")
+        blePeripheral = modelController.appState.device
         // Init
         assert(blePeripheral != nil)
         controllerData = ControllerModuleManager(blePeripheral: blePeripheral!, delegate: self)
@@ -158,7 +161,6 @@ class ControllerModeViewController: PeripheralModeViewController {
     }
     
     private func sendTouchEvent(tag: Int, isPressed: Bool) {
-        DLog("TOUCH EVENT BOIII")
         let message = "!B\(tag)\(isPressed ? "1" : "0")"
         if let data = message.data(using: String.Encoding.utf8) {
             controllerData.sendCrcData(data)

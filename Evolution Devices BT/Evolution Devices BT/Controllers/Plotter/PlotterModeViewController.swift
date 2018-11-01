@@ -18,6 +18,9 @@ class PlotterModeViewController: PeripheralModeViewController {
     @IBOutlet weak var autoscrollLabel: UILabel!
     @IBOutlet weak var widthLabel: UILabel!
     
+    // State Control
+    var modelController: ModelController!
+    
     // Data
     fileprivate var uartDataManager: UartDataManager!
     fileprivate var originTimestamp: CFAbsoluteTime!

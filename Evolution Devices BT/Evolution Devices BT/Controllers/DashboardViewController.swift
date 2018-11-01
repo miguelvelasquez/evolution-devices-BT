@@ -22,11 +22,10 @@ class DashboardViewController: UIViewController {
     
     @IBAction func pressedControllerButton(_ sender: UITapGestureRecognizer) {
         DLog("pressed controller")
+        checkConnected()
         if let controllerViewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerModeViewController") as? ControllerModeViewController {
-            controllerViewController.blePeripheral = blePeripheral
-            if blePeripheral == nil {
-                DLog("It is nil")
-            }
+            controllerViewController.modelController = self.modelController
+
             show(controllerViewController, sender: self)
         }
     }
@@ -34,8 +33,11 @@ class DashboardViewController: UIViewController {
     
     @IBAction func pressedPlotterButton(_ sender: UITapGestureRecognizer) {
         DLog("pressed plotter")
+        checkConnected()
         if let plotterViewController = self.storyboard?.instantiateViewController(withIdentifier: "PlotterModeViewController") as? PlotterModeViewController {
             plotterViewController.blePeripheral = blePeripheral
+            plotterViewController.modelController = self.modelController
+
             show(plotterViewController, sender: self)
         }
     }
@@ -76,11 +78,13 @@ class DashboardViewController: UIViewController {
         
         // Create first button
         let buttonOne = CancelButton(title: "CLOSE") {
+            self.updateUI()
         }
         
         // Create second button
         let buttonTwo = DefaultButton(title: "SCAN", dismissOnTap: false) {
             scanVC.scanPeripherals()
+            self.updateUI()
         }
         
         // Add buttons to dialog
@@ -90,13 +94,27 @@ class DashboardViewController: UIViewController {
         self.present(popup, animated: animated, completion: nil)
     }
     
+    func showNotConnectedDialog(animated: Bool = true) {
+        // Prepare the popup
+        let title = "Device Not Connected"
+        let message = "You must connect to the device to access this feature"
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message)
+    
+        // Create first button
+        let buttonOne = CancelButton(title: "Close") {
+        }
+        
+        // Add buttons to dialog
+        popup.addButtons([buttonOne])
+        
+        // Present dialog
+        self.present(popup, animated: animated, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if modelController.appState.isConnected() {
-            showConnected()
-        } else {
-            showDisconnected()
-        }
+        updateUI()
         
         if let blePeripheral = blePeripheral {
             hasUart = blePeripheral.hasUart()
@@ -122,6 +140,20 @@ class DashboardViewController: UIViewController {
     // MARK: - UI
     @objc private func rssiRefreshFired() {
         blePeripheral?.readRssi()
+    }
+    
+    func checkConnected() {
+        if !modelController.appState.isConnected() {
+            showNotConnectedDialog()
+        }
+    }
+    
+    func updateUI() {
+        if modelController.appState.isConnected() {
+            showConnected()
+        } else {
+            showDisconnected()
+        }
     }
     
     

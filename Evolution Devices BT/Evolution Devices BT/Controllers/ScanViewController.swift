@@ -416,6 +416,7 @@ extension ScanViewController: UITableViewDataSource {
                 self.disconnect(peripheral: peripheral)
                 peripheralCell.connected = false
                 peripheralCell.button.setTitle("Connect", for: .normal)
+                self.modelController.appState.setDisconnected(peripheral: peripheral)
             } else {
                 DLog("YOU CLICKED CONNECT")
                 self.connect(peripheral: peripheral)
